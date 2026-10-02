@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/block/plug-and-play-template/commit/147965f0633c75c15361d7a90005093e9933c534",
       "git:hexsha": "147965f0633c75c15361d7a90005093e9933c534",
-      "repolex:parseStatus": "ast_complete",
+      "repolex:parseStatus": "enrich_complete",
       "git:tagName": "main"
     }
   ]

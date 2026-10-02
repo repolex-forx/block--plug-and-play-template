@@ -59,6 +59,93 @@
       ],
       "ast": [
         "aggregate/ast/147965f0633c75c15361d7a90005093e9933c534/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/147965f0633c75c15361d7a90005093e9933c534.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "@remotion/bundler",
+          "ecosystem": "NPM",
+          "version": "4.0.417",
+          "githubOrg": "remotion-dev",
+          "githubRepo": "remotion",
+          "githubCommit": "811c628b2844671807c9c90fe9e714cfd3c55ef7",
+          "githubTag": "v4.0.417",
+          "githubUrl": "https://github.com/remotion-dev/remotion/tree/main/packages/bundler",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "@remotion/cli",
+          "ecosystem": "NPM",
+          "version": "4.0.417",
+          "githubOrg": "remotion-dev",
+          "githubRepo": "remotion",
+          "githubCommit": "811c628b2844671807c9c90fe9e714cfd3c55ef7",
+          "githubTag": "v4.0.417",
+          "githubUrl": "https://github.com/remotion-dev/remotion/tree/main/packages/cli",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "react",
+          "ecosystem": "NPM",
+          "version": "19.2.4",
+          "githubOrg": "react",
+          "githubRepo": "react",
+          "githubCommit": "90ab3f89f4824ac763b6f877c6f711200d1338d2",
+          "githubTag": "v19.2.4",
+          "githubUrl": "git+https://github.com/react/react.git",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "react-dom",
+          "ecosystem": "NPM",
+          "version": "19.2.4",
+          "githubOrg": "react",
+          "githubRepo": "react",
+          "githubCommit": "90ab3f89f4824ac763b6f877c6f711200d1338d2",
+          "githubTag": "v19.2.4",
+          "githubUrl": "git+https://github.com/react/react.git",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "remotion",
+          "ecosystem": "NPM",
+          "version": "4.0.417",
+          "githubOrg": "remotion-dev",
+          "githubRepo": "remotion",
+          "githubCommit": "811c628b2844671807c9c90fe9e714cfd3c55ef7",
+          "githubTag": "v4.0.417",
+          "githubUrl": "https://github.com/remotion-dev/remotion/tree/main/packages/core",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "@types/react",
+          "ecosystem": "NPM",
+          "version": "19.2.10",
+          "githubOrg": "DefinitelyTyped",
+          "githubRepo": "DefinitelyTyped",
+          "githubUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "@types/react-dom",
+          "ecosystem": "NPM",
+          "version": "19.2.3",
+          "githubOrg": "DefinitelyTyped",
+          "githubRepo": "DefinitelyTyped",
+          "githubUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+          "source": "build_file:package.json"
+        },
+        {
+          "packageName": "typescript",
+          "ecosystem": "NPM",
+          "version": "5.9.3",
+          "githubOrg": "microsoft",
+          "githubRepo": "TypeScript",
+          "githubCommit": "c63de15a992d37f0d6cec03ac7631872838602cb",
+          "githubTag": "v5.9.3",
+          "githubUrl": "git+https://github.com/microsoft/TypeScript.git",
+          "source": "build_file:package.json"
+        }
       ]
     }
   ],
