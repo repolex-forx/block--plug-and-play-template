@@ -1,1 +1,130 @@
-Initializing
+# Repolex Knowledge Graph of block/plug-and-play-template
+
+RDF knowledge graph data for [block/plug-and-play-template](https://github.com/block/plug-and-play-template), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download block/plug-and-play-template
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 147965f0633c75c15361d7a90005093e9933c534
+│   │       └── chunk-001.nq.gz
+│   ├── lsp
+│   │   └── 147965f0633c75c15361d7a90005093e9933c534.nq.gz
+│   └── repolex
+│       └── 147965f0633c75c15361d7a90005093e9933c534
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 050a32a69296b5e9021224d1c4b5093576a212c0.nq.gz
+│   ├── 0ba9db25329d0b336e39ca8cde8470c5b7bc45eb.nq.gz
+│   ├── 0fc624365a1d9b00cc9e201564e0ef888ec58760.nq.gz
+│   ├── 131abd3d868a1eb1fa998fca3e680d8e75c36fb9.nq.gz
+│   ├── 148f9ee4663288c4df147c337cbde7f44a1395fc.nq.gz
+│   ├── 1fa513e7f3f906f29c3961d7810ed32c206d64bd.nq.gz
+│   ├── 21f58dde285d4c7a9034fb5b933344e2f762c7d9.nq.gz
+│   ├── 25f0bc5ed80683a81f46e6bfd1cf8ea0b56c6807.nq.gz
+│   ├── 39318cec9583e8b9b17f801836578fa4588d8a8f.nq.gz
+│   ├── 3b68418a682d8c99d2146d3d96a1c1d41a4ff9e9.nq.gz
+│   ├── 42082be88904bd9838be1ee4c81eadd0047e30aa.nq.gz
+│   ├── 4609224bb7581096251ce875cd152b11b25bdfab.nq.gz
+│   ├── 500bcb6df0079dc6006310d27416a3515abef9f4.nq.gz
+│   ├── 595abaf4d899e527207e96e46912006a13c24365.nq.gz
+│   ├── 6093c35820818c1e074a5c1b1c19e247cec3db47.nq.gz
+│   ├── 6bccf43368fd7c96d9c659562a5142b8b8cb98a1.nq.gz
+│   ├── 703d6fe1b93b81d765c999d3a18fdbd09a3c21df.nq.gz
+│   ├── 73f9dffa4acd7c3cdb3d88c9c1a0dc0b6170cd59.nq.gz
+│   ├── 821d4f35016f3ce25ac188f01cfe8757594efc20.nq.gz
+│   ├── 831f0cbd941a512a027daaf28fa2309a30f15815.nq.gz
+│   ├── 84db8b584a3cb1b0a3a20119ce2a74dc288b35e8.nq.gz
+│   ├── 862ee3c28647e7a58801a75236855c269c1448ae.nq.gz
+│   ├── 8d497165a4dbc927a7b6d10269213649ed89e230.nq.gz
+│   ├── 906eeab0a8fd868e4990f91c3f231619b41515d7.nq.gz
+│   ├── 91659fc7d8bc646ab8daaa5ec155508f77a08f92.nq.gz
+│   ├── 94152e79d3fd26908aa7bac06ac81c69ae609c75.nq.gz
+│   ├── 9582fc588754f78d9875691a3bd5e674295436b3.nq.gz
+│   ├── 9c65df5f9a62d0ebbb72163186badbe216ab90df.nq.gz
+│   ├── a21ef6b300f13b478207e785af01382add4cbcdb.nq.gz
+│   ├── a91faf00cb0c14c452aef6be43849e0fef6470c7.nq.gz
+│   ├── b5d36d93ba62f5bda3c8d141aeb0a4010d3678e3.nq.gz
+│   ├── b984c9d4ca2bdd9d1f42f81d2d568dc8d82c5303.nq.gz
+│   ├── bfdeb4676c750cd452f9c6e1678257fcb0acaf12.nq.gz
+│   ├── c33a9f070af2a5aece7bcd572f95e3ee26a04a60.nq.gz
+│   ├── cedf5d860681e062c4fdd56a87c56744b57db82d.nq.gz
+│   ├── d05717f59c14d30900593f4664c94b9b2af12f2d.nq.gz
+│   ├── d16ed56b3d6819acc46600676113cc08a6fc0220.nq.gz
+│   ├── d1b299bcf73cd24b62396a3fc25d9cdc73651114.nq.gz
+│   ├── d2563cf736c40900afca9047875161f9f1581cd5.nq.gz
+│   ├── d531d83d2eee3e2658023656ed97b120d19f2b59.nq.gz
+│   ├── db56defd67f8c1915f292b1e3dcc32a9b0d9179f.nq.gz
+│   ├── de874d4fdb33bc50b9a9551da2a8782861355c1f.nq.gz
+│   ├── eda539d2ab4908e84692894111808eed2cb271d1.nq.gz
+│   ├── f31c790edb3e2f1611a701c7637cc396353d1ff7.nq.gz
+│   ├── fda696e990ecaa1bce601c64723062c4f7617460.nq.gz
+│   ├── feb51944c5cc551b9e08d6c403341f4d0b656580.nq.gz
+│   └── ff4e3412becdd94623d59ef229540ccf8a5a97fd.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── dep
+│   └── 147965f0633c75c15361d7a90005093e9933c534.nq.gz
+├── filetree
+│   └── 147965f0633c75c15361d7a90005093e9933c534.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+15 directories, 57 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[block/plug-and-play-template](https://github.com/block/plug-and-play-template)
+
+---
+*Parsed on 2026-10-02 by [repolex](https://repolex.ai)*

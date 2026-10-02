@@ -1,0 +1,11 @@
+{
+  "org": "block",
+  "repo": "plug-and-play-template",
+  "versions": [
+    {
+      "commit": "147965f0633c75c15361d7a90005093e9933c534",
+      "tag": "main",
+      "parsed_at": "2026-10-02T11:32:17.750154+00:00"
+    }
+  ]
+}
